@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Login Page</title>
+		<title>Registration Page</title>
 		<link rel="icon" type="image/png" href="assets/images/logo.png">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=2">
@@ -55,7 +55,7 @@
 		</style>
 	</head>
 	<body style="background-color: rgb(247, 247, 247);">
-		<div style="display: block; margin-top: 20vh;">
+		<div style="display: block; margin-top: 10vh;">
 			<table style="margin:auto;">
 				<tbody>
 					<tr>
@@ -66,18 +66,26 @@
 			</table>
 		</div>
 		<div id="FormDiv">
-			<form action="Home.html" method="GET">
+			<form action="" method="GET">
+				<label><i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;Name</label>
+				<br>
+				<input style="margin-top: 4px; margin-bottom: 10px;" type="text" name="name" placeholder="Enter your name" required>
+				<br>
 				<label><i class="fa fa-user" aria-hidden="true"></i>&nbsp;User Name</label>
 				<br>
-				<input style="margin-top: 4px; margin-bottom: 10px;" type="text" name="username" placeholder="Enter your user name" required>
+				<input style="margin-top: 4px; margin-bottom: 10px;" type="text" name="username" placeholder="Enter a username" required>
+				<br>
+				<label><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;Contact Number</label>
+				<br>
+				<input style="margin-top: 4px; margin-bottom: 10px;" type="text" name="text" placeholder="Enter your contact number" required>
 				<br>
 				<label><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;Password</label>
 				<br>
-				<input style="margin-top: 4px; margin-bottom: 10px;" type="password" name="password" placeholder="Enter your password" required>
+				<input style="margin-top: 4px; margin-bottom: 10px;" type="password" name="password" placeholder="Set a new password" required>
 				<br>
-				<button type="submit" style="margin-bottom: 10px;" name="login" value="login"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign-in</button>
+				<button type="submit" style="margin-bottom: 10px;" name="login" value="login" onclick="window.alert('You have registered successfully')"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</button>
 				<br>
-				<span style="font-size: 12pt;">Yet not registered? Let <a href="Registration.html" target="_self"><b>create</b></a> your account first.</span>
+				<span style="font-size: 12pt;">Oh! are you already registered? Let's <a href="Login.html" target="_self"><b>login</b></a></span>
 			</form>
 		</div>
 	</body>
